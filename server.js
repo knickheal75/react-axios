@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 
-app.use("/",express.static(__dirname+"/public"))
+//app.use("/",express.static(__dirname+"/public"))
 
 app.post("/",function(req,res,next){
     var user = new Visitor();
@@ -23,7 +23,7 @@ app.post("/",function(req,res,next){
             throw err;
         }
         else{
-            res.send("success");
+            res.json({"status":"sent"});
         }
     });
 

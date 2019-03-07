@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-module.exports= mongoose.connect('mongodb://ujjwal:connectmenow123@ds161285.mlab.com:61285/newvisitors',{ useNewUrlParser: true },function(err){
+module.exports= mongoose.connect('mongodb://nikhil751:beckham23@ds161285.mlab.com:61285/contactform1',{ useNewUrlParser: true },function(err){
     if(err){
         throw err;
     }
